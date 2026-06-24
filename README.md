@@ -90,7 +90,7 @@ pip install -r requirements.txt
 Create a `.env` file in the project root (this file is gitignored and never committed):
 
 ```bash
-cp .env.example .env   # if an example file exists, otherwise create from scratch
+touch .env   # create from scratch
 ```
 
 Edit `.env` and fill in your credentials:
@@ -98,7 +98,7 @@ Edit `.env` and fill in your credentials:
 ```dotenv
 NCBI_API_KEY=your_ncbi_api_key_here
 EMAIL_ADDRESS=your_email@example.com
-ORPHANET_API_KEY=your_orphanet_key_here   # optional
+ORPHANET_API_KEY=your_orphanet_key_here
 ```
 
 **Getting an NCBI API key** (recommended — raises rate limits from 3 to 10 requests/second):
